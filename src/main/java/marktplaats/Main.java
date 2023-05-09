@@ -1,7 +1,12 @@
 package marktplaats;
 
+import marktplaats.scherm.HoofdScherm;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        HoofdScherm hoofdScherm = new HoofdScherm();
+        hoofdScherm.start();
+
     }
 }
