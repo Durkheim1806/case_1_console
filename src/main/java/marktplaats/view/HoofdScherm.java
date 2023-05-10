@@ -1,4 +1,4 @@
-package marktplaats.scherm;
+package marktplaats.view;
 
 import java.util.Scanner;
 

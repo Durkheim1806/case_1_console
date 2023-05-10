@@ -1,4 +1,4 @@
-package marktplaats.scherm;
+package marktplaats.view;
 
 public class MijnAdvertentiesScherm {
 
