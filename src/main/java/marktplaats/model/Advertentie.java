@@ -14,11 +14,12 @@ public class Advertentie {
     private long id;
     private String titel;
     @Enumerated(EnumType.STRING)
-    private AdvertentieSoort soort;
+    private Soort soort;
     @ManyToOne(cascade = CascadeType.PERSIST)
-    private AdvertentieCategorie categorie;
+    private Categorie categorie;
+
     @ManyToOne(cascade = CascadeType.PERSIST)
-    private AdvertentieSubCategorie subCategorie;
+    private Categorie subCategorie;
     @Enumerated(EnumType.STRING)
     private Bezorgwijze bezorgwijze;
     //    private List<File> fotos;
@@ -26,7 +27,7 @@ public class Advertentie {
     private String omschrijving;
     private String vraagprijs;
 
-    public Advertentie(String titel, AdvertentieSoort soort, Bezorgwijze bezorgwijze, String omschrijving, String vraagprijs) {
+    public Advertentie(String titel, Soort soort, Bezorgwijze bezorgwijze, String omschrijving, String vraagprijs) {
         this.titel = titel;
         this.soort = soort;
         this.bezorgwijze = bezorgwijze;
@@ -34,7 +35,7 @@ public class Advertentie {
         this.vraagprijs = vraagprijs;
     }
 
-    public Advertentie(String titel, AdvertentieSoort soort, AdvertentieCategorie categorie, AdvertentieSubCategorie subCategorie, Bezorgwijze bezorgwijze, String omschrijving, String vraagprijs) {
+    public Advertentie(String titel, Soort soort, Categorie categorie, Categorie subCategorie, Bezorgwijze bezorgwijze, String omschrijving, String vraagprijs) {
         this.titel = titel;
         this.soort = soort;
         this.categorie = categorie;
@@ -43,4 +44,6 @@ public class Advertentie {
         this.omschrijving = omschrijving;
         this.vraagprijs = vraagprijs;
     }
+
+
 }

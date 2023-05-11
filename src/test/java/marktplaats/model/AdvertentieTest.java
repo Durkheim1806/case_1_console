@@ -3,8 +3,8 @@ package marktplaats.model;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static marktplaats.model.AdvertentieSoort.PRODUCT;
 import static marktplaats.model.Bezorgwijze.VERSTUREN;
+import static marktplaats.model.Soort.PRODUCT;
 
 class AdvertentieTest {
 

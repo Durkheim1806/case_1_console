@@ -1,6 +1,6 @@
 package marktplaats.model;
 
-public enum AdvertentieSoort {
+public enum Soort {
     PRODUCT, DIENST;
 
 

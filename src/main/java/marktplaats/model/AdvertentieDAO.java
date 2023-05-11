@@ -1,13 +1,16 @@
 package marktplaats.model;
 
-import jakarta.enterprise.context.Dependent;
+import jakarta.annotation.PreDestroy;
 import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.List;
+
 @Slf4j
-@Dependent
+@Singleton
 public class AdvertentieDAO {
 
     private EntityManager em;
@@ -29,7 +32,27 @@ public class AdvertentieDAO {
             log.error(e.getMessage(), e);
             transaction.rollback();
         }
+    }
 
+    public Advertentie select(int id) {
+
+        EntityTransaction transaction = em.getTransaction();
+
+        transaction.begin();
+        Advertentie advertentie = em.find(Advertentie.class, id);
+        transaction.commit();
+
+        return advertentie;
+    }
+
+    public List<Advertentie> findAll() {
+
+        return em.createQuery("select a from Advertentie a", Advertentie.class).getResultList();
+    }
+
+    @PreDestroy
+    public void close() {
+        this.em.close();
     }
 
 }

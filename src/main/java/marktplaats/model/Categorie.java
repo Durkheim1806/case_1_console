@@ -1,24 +1,29 @@
 package marktplaats.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
 @Entity
-public class AdvertentieCategorie {
+public class Categorie {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String naam;
+    @ManyToOne
+    private Categorie parent;
 
-    public AdvertentieCategorie(String naam) {
+    public Categorie(String naam) {
         this.naam = naam;
     }
+
+    public Categorie(String naam, Categorie parent) {
+        this.naam = naam;
+        this.parent = parent;
+    }
+
 
 }

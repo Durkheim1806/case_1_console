@@ -20,7 +20,7 @@
                 <!-- Rolling once a day -->
                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
                 <!-- Rolling based on size -->
-                <SizeBasedTriggeringPolicy size="2 KB"/>
+                <SizeBasedTriggeringPolicy size="1000 KB"/>
             </Policies>
         </RollingFile>
     </Appenders>
@@ -35,7 +35,7 @@
         <Logger name="org.hibernate.type.descriptor.sql" level="TRACE"/>
 
         <Root level="INFO">
-            <AppenderRef ref="console"/>
+            <AppenderRef ref="rollingFile"/>
         </Root>
     </Loggers>
 </Configuration>
