@@ -17,7 +17,6 @@ public class Advertentie {
     private Soort soort;
     @ManyToOne(cascade = CascadeType.PERSIST)
     private Categorie categorie;
-
     @ManyToOne(cascade = CascadeType.PERSIST)
     private Categorie subCategorie;
     @Enumerated(EnumType.STRING)
@@ -26,6 +25,8 @@ public class Advertentie {
     private String linkVideo;
     private String omschrijving;
     private String vraagprijs;
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    private Gebruiker aanbieder;
 
     public Advertentie(String titel, Soort soort, Bezorgwijze bezorgwijze, String omschrijving, String vraagprijs) {
         this.titel = titel;
@@ -45,5 +46,9 @@ public class Advertentie {
         this.vraagprijs = vraagprijs;
     }
 
-
+    public Advertentie(String titel, Soort soort, String omschrijving) {
+        this.titel = titel;
+        this.soort = soort;
+        this.omschrijving = omschrijving;
+    }
 }
