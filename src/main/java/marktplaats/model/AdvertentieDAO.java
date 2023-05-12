@@ -50,6 +50,17 @@ public class AdvertentieDAO {
         return em.createQuery("select a from Advertentie a", Advertentie.class).getResultList();
     }
 
+    public List<Advertentie> vindAdvertentiesPerGebruiker(long id) {
+
+        return em.createQuery("""   
+                        select a 
+                        from Advertentie a
+                        where a.id = :id
+                        """, Advertentie.class)
+                .setParameter("id", id)
+                .getResultList();
+    }
+
     @PreDestroy
     public void close() {
         this.em.close();

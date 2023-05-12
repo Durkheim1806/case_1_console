@@ -3,6 +3,7 @@ package marktplaats.model;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Data
 @NoArgsConstructor
@@ -15,8 +16,10 @@ public class Advertentie {
     private String titel;
     @Enumerated(EnumType.STRING)
     private Soort soort;
+    @ToString.Exclude
     @ManyToOne(cascade = CascadeType.PERSIST)
     private Categorie categorie;
+    @ToString.Exclude
     @ManyToOne(cascade = CascadeType.PERSIST)
     private Categorie subCategorie;
     @Enumerated(EnumType.STRING)

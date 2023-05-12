@@ -20,7 +20,7 @@ public class AdvertentieBekijkenScherm {
         int keuzeBekijken = 1;
         do {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("---  Advertentie Bekijken Menu ---");
+            System.out.println("\033[0;33m" + "---  Advertentie Bekijken Menu ---" + "\033[0m");
             System.out.println("Geef het nummer op van de advertentie die je wilt bekijken. Wil je terug kies dan voor 0.");
             keuzeBekijken = scanner.nextInt();
 

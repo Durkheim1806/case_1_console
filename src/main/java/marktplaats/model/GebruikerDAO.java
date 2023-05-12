@@ -32,6 +32,17 @@ public class GebruikerDAO {
         }
     }
 
+    public Gebruiker select(int id) {
+
+        EntityTransaction transaction = em.getTransaction();
+
+        transaction.begin();
+        Gebruiker gebruiker = em.find(Gebruiker.class, id);
+        transaction.commit();
+
+        return gebruiker;
+    }
+
     @PreDestroy
     public void close() {
         this.em.close();
