@@ -49,13 +49,19 @@ public class MijnAdvertentiesScherm extends Scherm {
                         break;
                     case 2:
                         break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
                     default:
                         System.out.println("Ongeldige keuze. Probeer het nog eens.");
                 }
             } catch (Exception exception) {
                 System.out.println("Er is een foutmelding opgetreden. Probeer het opnieuw");
             }
-        } while (keuze != 2);
+        } while (keuze != 5);
 
     }
 

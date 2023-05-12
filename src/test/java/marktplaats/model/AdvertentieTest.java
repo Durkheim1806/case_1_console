@@ -11,7 +11,7 @@ class AdvertentieTest {
     @Test
     public void alsAanmakenAdvertentieDanNietNull() {
 
-        Advertentie advertentieKiteBoard = new Advertentie("kite board", PRODUCT, VERSTUREN, "f1 kite board zo goed als nieuw", "150");
+        Advertentie advertentieKiteBoard = new Advertentie("kite board", PRODUCT, null, VERSTUREN, "link", "kite board nooit gebruikt", "150", null);
         System.out.println(advertentieKiteBoard.toString());
         Assertions.assertTrue(advertentieKiteBoard != null);
     }

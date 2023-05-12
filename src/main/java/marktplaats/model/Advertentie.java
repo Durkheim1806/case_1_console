@@ -28,26 +28,14 @@ public class Advertentie {
     @ManyToOne(cascade = CascadeType.PERSIST)
     private Gebruiker aanbieder;
 
-    public Advertentie(String titel, Soort soort, Bezorgwijze bezorgwijze, String omschrijving, String vraagprijs) {
-        this.titel = titel;
-        this.soort = soort;
-        this.bezorgwijze = bezorgwijze;
-        this.omschrijving = omschrijving;
-        this.vraagprijs = vraagprijs;
-    }
-
-    public Advertentie(String titel, Soort soort, Categorie categorie, Bezorgwijze bezorgwijze, String omschrijving, String vraagprijs) {
+    public Advertentie(String titel, Soort soort, Categorie categorie, Bezorgwijze bezorgwijze, String linkVideo, String omschrijving, String vraagprijs, Gebruiker aanbieder) {
         this.titel = titel;
         this.soort = soort;
         this.categorie = categorie;
         this.bezorgwijze = bezorgwijze;
+        this.linkVideo = linkVideo;
         this.omschrijving = omschrijving;
         this.vraagprijs = vraagprijs;
-    }
-
-    public Advertentie(String titel, Soort soort, String omschrijving) {
-        this.titel = titel;
-        this.soort = soort;
-        this.omschrijving = omschrijving;
+        this.aanbieder = aanbieder;
     }
 }

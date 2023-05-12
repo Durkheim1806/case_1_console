@@ -26,9 +26,9 @@ public abstract class Scherm {
 
         for (int i = 0; i < categorieLijst.size(); i++) {
             if (categorieLijst.get(i).getParent() == null) {
-                System.out.printf("| %-5s | %-20s |%n", categorieLijst.get(i).getId(), categorieLijst.get(i).getNaam());
+                System.out.printf("| %-1s | %-20s |%n", categorieLijst.get(i).getId(), categorieLijst.get(i).getNaam());
             } else {
-                System.out.printf("| %-5s | %-20s |", categorieLijst.get(i).getId(), categorieLijst.get(i).getNaam());
+                System.out.printf("| %-1s | %-20s |", categorieLijst.get(i).getId(), categorieLijst.get(i).getNaam());
                 geefParentCategorie(categorieLijst.get(i));
             }
         }
