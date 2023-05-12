@@ -23,8 +23,7 @@ public class Applicatie {
 
     private void run() {
 
-
-        this.loginScherm.start();
+        this.loginScherm.start(null);
 
     }
 }

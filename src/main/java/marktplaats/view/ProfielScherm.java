@@ -1,8 +1,10 @@
 package marktplaats.view;
 
-public class ProfielScherm {
+import marktplaats.model.Gebruiker;
 
-    public void start(){
+public class ProfielScherm extends Scherm {
+
+    public void start(Gebruiker gebruikerSessie) {
         System.out.println("Hier komt informatie over het profiel");
     }
 }

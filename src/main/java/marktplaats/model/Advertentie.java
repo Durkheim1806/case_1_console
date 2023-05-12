@@ -19,9 +19,6 @@ public class Advertentie {
     @ToString.Exclude
     @ManyToOne(cascade = CascadeType.PERSIST)
     private Categorie categorie;
-    @ToString.Exclude
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    private Categorie subCategorie;
     @Enumerated(EnumType.STRING)
     private Bezorgwijze bezorgwijze;
     //    private List<File> fotos;
@@ -39,11 +36,10 @@ public class Advertentie {
         this.vraagprijs = vraagprijs;
     }
 
-    public Advertentie(String titel, Soort soort, Categorie categorie, Categorie subCategorie, Bezorgwijze bezorgwijze, String omschrijving, String vraagprijs) {
+    public Advertentie(String titel, Soort soort, Categorie categorie, Bezorgwijze bezorgwijze, String omschrijving, String vraagprijs) {
         this.titel = titel;
         this.soort = soort;
         this.categorie = categorie;
-        this.subCategorie = subCategorie;
         this.bezorgwijze = bezorgwijze;
         this.omschrijving = omschrijving;
         this.vraagprijs = vraagprijs;

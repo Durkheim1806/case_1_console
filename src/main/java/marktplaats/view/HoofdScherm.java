@@ -7,7 +7,7 @@ import marktplaats.model.Gebruiker;
 import java.util.Scanner;
 
 @Singleton
-public class HoofdScherm {
+public class HoofdScherm extends Scherm {
 
     private Gebruiker gebruikerSessie;
     @Inject
@@ -23,7 +23,7 @@ public class HoofdScherm {
         int keuze = 0;
         do {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("\033[0;33m" + "---  Marktplaats Hoofd Menu ---" + "\033[0m");
+            System.out.println("\033[0;33m" + "---  Marktplaats - Hoofd Menu ---" + "\033[0m");
             System.out.println("Je bent ingelogd als " + gebruikerSessie.getVoornaam());
             System.out.println("1 - Alle advertenties");
             System.out.println("2 - Mijn advertenties");
@@ -42,7 +42,7 @@ public class HoofdScherm {
                         break;
                     case 3:
                         ProfielScherm profielScherm = new ProfielScherm();
-                        profielScherm.start();
+                        profielScherm.start(this.gebruikerSessie);
                         break;
                     case 4:
                         break;

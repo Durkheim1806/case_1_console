@@ -3,39 +3,40 @@ package marktplaats.view;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import lombok.extern.slf4j.Slf4j;
-import marktplaats.model.Advertentie;
 import marktplaats.model.AdvertentieDAO;
+import marktplaats.model.Gebruiker;
 
 import java.util.Scanner;
 
 @Slf4j
 @Singleton
-public class AdvertentieBekijkenScherm {
+public class AdvertentieBekijkenScherm extends Scherm {
 
     @Inject
     private AdvertentieDAO advertentieDAO;
 
-    public void start() {
+    public void start(Gebruiker gebruikerSessie) {
 
         int keuzeBekijken = 1;
         do {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("\033[0;33m" + "---  Advertentie Bekijken Menu ---" + "\033[0m");
-            System.out.println("Geef het nummer op van de advertentie die je wilt bekijken. Wil je terug kies dan voor 0.");
-            keuzeBekijken = scanner.nextInt();
+            System.out.println("\033[0;33m" + "---  Marktplaats - Hoofd Menu - Alle Advertenties - Advertentie Bekijken ---" + "\033[0m");
 
-            if (keuzeBekijken == 0) {
-                break;
+            try {
+                System.out.println("Geef het nummer op van de advertentie die je wilt bekijken. Wil je terug kies dan voor 0.");
+                keuzeBekijken = scanner.nextInt();
+                if (keuzeBekijken == 0) {
+                    break;
+                }
+                System.out.println("Dit is de opgevraagde advertentie:");
+                printAdvertentie(advertentieDAO.select(keuzeBekijken));
+            } catch (Exception e) {
+                System.out.println("Er is een foutmelding opgetreden. Probeer het opnieuw");
             }
-            System.out.println("Dit is de opgevraagde advertentie:");
-            printAdvertentie(advertentieDAO.select(keuzeBekijken));
+
 
         } while (keuzeBekijken != 0);
     }
 
-    public void printAdvertentie(Advertentie advertentie) {
-        System.out.printf("| %-5s | %-20s | %-10s | %-10s | %-15s | %-10s | %-50s |%n", "ID", "TITEL", "SOORT", "CATEGORIE", "SUBCATEGORIE", "VRAAGPRIJS", "OMSCHRIJVING");
-        System.out.printf("| %-5s | %-20s | %-10s | %-10s | %-15s | %-10s | %-50s |%n", advertentie.getId(), advertentie.getTitel(), advertentie.getSoort(), advertentie.getCategorie() == null ? null : advertentie.getCategorie().getNaam(), advertentie.getSubCategorie() == null ? null : advertentie.getSubCategorie().getNaam(), advertentie.getVraagprijs(), advertentie.getOmschrijving());
-    }
 
 }
