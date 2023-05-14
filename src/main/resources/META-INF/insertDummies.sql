@@ -24,3 +24,5 @@ INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) V
 INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (5, 'kite board groen','slingshot kite board ',3, 2);
 INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (6, 'oude race fiets','vintage peugeot fiets',14, 3);
 INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (7, 'elektrische gazelle','top ding',13, 3);
+INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (8, 'verf kwasten','gratis ophalen',9, 3);
+INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (9, 'Makita accu 18v','gratis',11, 3);

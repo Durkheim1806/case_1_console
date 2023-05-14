@@ -92,6 +92,17 @@ public class AdvertentieDAO {
                 .getResultList();
     }
 
+    public List<Advertentie> vindAdvertentieZoekterm(String zoekterm) {
+        return em.createQuery("""   
+                        select a 
+                        from Advertentie a
+                        where a.titel like :zoekterm
+                        or a.omschrijving like :zoekterm
+                        """, Advertentie.class)
+                .setParameter("zoekterm", "%" + zoekterm + "%")
+                .getResultList();
+    }
+
 
     @PreDestroy
     public void close() {
