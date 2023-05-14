@@ -19,10 +19,13 @@ public class AlleAdvertentiesScherm extends Scherm {
     private AdvertentieDAO advertentieDAO;
 
     @Inject
-    AdvertentieZoekenScherm advertentieZoekenScherm;
+    private AdvertentieZoekenScherm advertentieZoekenScherm;
 
     @Inject
     private AdvertentieBekijkenScherm advertentieBekijkenScherm;
+
+    @Inject
+    AdvertentieBiedenScherm advertentieBiedenScherm;
 
     public void start(Gebruiker gebruiker) {
 
@@ -38,7 +41,8 @@ public class AlleAdvertentiesScherm extends Scherm {
             System.out.println("---  Keuze menu: ---");
             System.out.println("1 - Advertentie bekijken");
             System.out.println("2 - Advertentie zoeken");
-            System.out.println("3 - Terug");
+            System.out.println("3 - Bieden op een advertentie");
+            System.out.println("4 - Terug");
 
             try {
                 System.out.println("Geef je keuze op:");
@@ -50,13 +54,16 @@ public class AlleAdvertentiesScherm extends Scherm {
                     case 2:
                         this.advertentieZoekenScherm.start(this.gebruikerSessie);
                         break;
+                    case 3:
+                        this.advertentieBiedenScherm.start(this.gebruikerSessie);
+                        break;
                     default:
                         System.out.println("Ongeldige keuze. Probeer het nog eens.");
                 }
             } catch (Exception exception) {
-                System.out.println("Er is een foutmelding opgetreden. Probeer het opnieuw");
+                System.out.println("Er is een foutmelding opgetreden. Probeer het opnieuw. Foutmelding: " + exception);
             }
-        } while (keuze != 3);
+        } while (keuze != 4);
     }
 
 

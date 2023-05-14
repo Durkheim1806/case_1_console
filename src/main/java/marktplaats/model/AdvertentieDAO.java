@@ -45,6 +45,7 @@ public class AdvertentieDAO {
         return advertentie;
     }
 
+
     public void delete(Advertentie advertentie) {
 
         EntityTransaction transaction = em.getTransaction();

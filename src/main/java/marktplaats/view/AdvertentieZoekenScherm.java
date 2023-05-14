@@ -27,8 +27,8 @@ public class AdvertentieZoekenScherm extends Scherm {
         System.out.println("\033[0;33m" + "---  Marktplaats - Hoofd Menu - Alle Advertenties - Advertentie Zoeken ---" + "\033[0m");
         Scanner scanner = new Scanner(System.in);
         try {
-            System.out.println("Welk veld wil je op zoeken (soort/categorie/zoekveld/bezorgwijze)?");
-            while (!scanner.hasNext("(?i)(soort|categorie|zoekveld|bezorgwijze)")) {
+            System.out.println("Welk veld wil je op zoeken (soort/categorie/zoekveld)?");
+            while (!scanner.hasNext("(?i)(soort|categorie|zoekveld)")) {
                 System.out.println("Je hebt niet de juiste bezorgwijze ingetypt. Probeer het opnieuw:");
                 scanner.next();
             }
@@ -63,8 +63,6 @@ public class AdvertentieZoekenScherm extends Scherm {
                     System.out.println("Geef je zoekterm op:");
                     zoekterm = scanner4.next();
                     printLijstAdvertenties(advertentieDAO.vindAdvertentieZoekterm(zoekterm));
-
-
             }
         } catch (Exception e) {
             System.out.println(e);

@@ -4,6 +4,7 @@ import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import lombok.extern.slf4j.Slf4j;
 import marktplaats.model.AdvertentieDAO;
+import marktplaats.model.BiedingDAO;
 import marktplaats.model.Gebruiker;
 
 import java.util.Scanner;
@@ -14,6 +15,8 @@ public class AdvertentieBekijkenScherm extends Scherm {
 
     @Inject
     private AdvertentieDAO advertentieDAO;
+    @Inject
+    private BiedingDAO biedingDAO;
 
     public void start(Gebruiker gebruikerSessie) {
 
@@ -30,10 +33,11 @@ public class AdvertentieBekijkenScherm extends Scherm {
                 }
                 System.out.println("Dit is de opgevraagde advertentie:");
                 printAdvertentie(advertentieDAO.select(keuzeBekijken));
+                System.out.println("Dit zijn de biedingen van de advertentie:");
+                printBiedingen(biedingDAO.vindBiedingenPerAdvertentie(keuzeBekijken));
             } catch (Exception e) {
                 System.out.println("Er is een foutmelding opgetreden. Probeer het opnieuw");
             }
-
 
         } while (keuzeBekijken != 0);
     }

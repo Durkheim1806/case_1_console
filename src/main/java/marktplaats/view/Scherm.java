@@ -2,6 +2,7 @@ package marktplaats.view;
 
 
 import marktplaats.model.Advertentie;
+import marktplaats.model.Bieding;
 import marktplaats.model.Categorie;
 import marktplaats.model.Gebruiker;
 
@@ -70,6 +71,13 @@ public abstract class Scherm {
             }
         }
         return null;
+    }
+
+    public void printBiedingen(List<Bieding> biedingLijst) {
+        System.out.printf("| %-20s | %-20s | %n", "BEDRAG", "BIEDER");
+        for (int i = 0; i < biedingLijst.size(); i++) {
+            System.out.printf("| %-20s | %-20s | %n", biedingLijst.get(i).getBedragBieding(), biedingLijst.get(i).getBieder().getEmail());
+        }
     }
 
 
