@@ -54,7 +54,7 @@ public abstract class Scherm {
         for (int i = 0; i < categorieLijst.size(); i++) {
             if (categorieLijst.get(i).getParent() == null) {
                 System.out.println(categorieLijst.get(i).getId() + " " + categorieLijst.get(i).getNaam());
-                geefChildrenCategorien(categorieLijst, categorieLijst.get(i), "\t");
+                geefChildrenCategorien(categorieLijst, categorieLijst.get(i), "");
             }
         }
     }
@@ -67,10 +67,8 @@ public abstract class Scherm {
                     System.out.println(tabs + categorieLijst.get(i).getId() + " " + categorieLijst.get(i).getNaam());
                     geefChildrenCategorien(categorieLijst, categorieLijst.get(i), tabs);
                 }
-
             }
         }
         return null;
     }
-
 }

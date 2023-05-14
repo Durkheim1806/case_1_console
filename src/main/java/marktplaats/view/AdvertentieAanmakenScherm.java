@@ -99,15 +99,14 @@ public class AdvertentieAanmakenScherm extends Scherm {
         System.out.println("Je hebt deze gegevens ingevuld:");
         printAdvertentie(advertentie);
 
-        Scanner scanner5 = new Scanner(System.in);
 
         try {
             System.out.println("Vul opslaan in als je tevreden bent, en terug als je toch niet wilt opslaan:");
-            while (!scanner5.hasNext("(?i)(opslaan|terug)")) {
+            while (!scanner2.hasNext("(?i)(opslaan|terug)")) {
                 System.out.println("Je hebt niet opslaan of terug ingetypt. Probeer het opnieuw:");
-                scanner5.next();
+                scanner2.next();
             }
-            opslaanKeuze = scanner5.next();
+            opslaanKeuze = scanner2.next();
             if (opslaanKeuze.equalsIgnoreCase("opslaan")) {
                 System.out.println("De advertentie wordt opgeslagen.");
                 advertentieDAO.insert(advertentie);

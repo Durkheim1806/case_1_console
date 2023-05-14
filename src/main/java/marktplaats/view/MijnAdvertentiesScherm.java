@@ -18,6 +18,8 @@ public class MijnAdvertentiesScherm extends Scherm {
     @Inject
     AdvertentieWijzigenScherm advertentieWijzigenScherm;
     @Inject
+    AdvertentieVerwijderenScherm advertentieVerwijderenScherm;
+    @Inject
     private AdvertentieDAO advertentieDAO;
 
     private Gebruiker gebruikerSessie;
@@ -56,6 +58,7 @@ public class MijnAdvertentiesScherm extends Scherm {
                         this.advertentieWijzigenScherm.start(this.gebruikerSessie);
                         break;
                     case 4:
+                        this.advertentieVerwijderenScherm.start(this.gebruikerSessie);
                         break;
                     case 5:
                         break;

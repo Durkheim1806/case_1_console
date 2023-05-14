@@ -45,6 +45,15 @@ public class AdvertentieDAO {
         return advertentie;
     }
 
+    public void delete(Advertentie advertentie) {
+
+        EntityTransaction transaction = em.getTransaction();
+
+        transaction.begin();
+        em.remove(advertentie);
+        transaction.commit();
+    }
+
     public List<Advertentie> findAll() {
 
         return em.createQuery("select a from Advertentie a", Advertentie.class).getResultList();
