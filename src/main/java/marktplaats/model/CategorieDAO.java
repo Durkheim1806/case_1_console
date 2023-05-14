@@ -24,6 +24,7 @@ public class CategorieDAO {
         return em.createQuery("select c from Categorie c", Categorie.class).getResultList();
     }
 
+
     @PreDestroy
     public void close() {
         this.em.close();

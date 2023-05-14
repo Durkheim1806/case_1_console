@@ -33,49 +33,50 @@ public class AdvertentieAanmakenScherm extends Scherm {
         String opslaanKeuze = "";
 
         System.out.println("\033[0;33m" + "---  Marktplaats - Hoofd Menu - Mijn Advertenties - Advertentie Aanmaken ---" + "\033[0m");
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner1 = new Scanner(System.in);
         System.out.println("Geef de velden op voor het aanmaken van de advertentie:");
 
         try {
             System.out.println("Titel:");
-            titel = scanner.nextLine();
-        } catch (Exception e) {
-            System.out.println(e);
+            titel = scanner1.nextLine();
+        } catch (Exception exception) {
+            System.out.println("Er is een foutmelding opgetreden:" + exception);
         }
 
         try {
             System.out.println("Soort (product/dienst):");
-            while (!scanner.hasNext("(?i)(dienst|product)")) {
+            while (!scanner1.hasNext("(?i)(dienst|product)")) {
                 System.out.println("Je hebt niet product of dienst ingetypt. Probeer het opnieuw:");
-                scanner.next();
+                scanner1.next();
             }
-            soort = scanner.next();
-        } catch (Exception e) {
-            System.out.println(e);
+            soort = scanner1.next();
+        } catch (Exception exception) {
+            System.out.println("Er is een foutmelding opgetreden:" + exception);
         }
 
         try {
+
             System.out.println("Dit zijn de categorien voor advertenties:");
             System.out.println("----------------------------");
-            System.out.println();
-            printLijstCategorien(categorieDAO.findAll());
+            printLijstCategorien2(categorieDAO.findAll());
             System.out.println("----------------------------");
-            System.out.println("Vul een catgorie in:");
-            categorie = scanner.nextInt();
-        } catch (Exception e) {
-            System.out.println(e);
+            System.out.println("Vul een categorie in:");
+            categorie = scanner1.nextInt() - 1;
+        } catch (Exception exception) {
+            System.out.println("Er is een foutmelding opgetreden:" + exception);
         }
+
 
         try {
             System.out.println("Bezorgwijze (versturen/afhalen/rembours/magazijn/verzekerde verzending):");
-            while (!scanner.hasNext("(?i)(versturen|afhalen|rembours|magazijn|verzekerde verzending)")) {
+            while (!scanner1.hasNext("(?i)(versturen|afhalen|rembours|magazijn|verzekerde verzending)")) {
                 System.out.println("Je hebt niet de juiste bezorgwijze ingetypt. Probeer het opnieuw:");
-                scanner.next();
+                scanner1.next();
             }
-            bezorgwijze = scanner.next();
+            bezorgwijze = scanner1.next();
             System.out.println("Je hebt gekozen voor: " + bezorgwijze);
-        } catch (Exception e) {
-            System.out.println(e);
+        } catch (Exception exception) {
+            System.out.println("Er is een foutmelding opgetreden:" + exception);
         }
 
         Scanner scanner2 = new Scanner(System.in); // nog ff navragen waarom dit ding nodig is, op de een of andere manier heeft
@@ -90,32 +91,35 @@ public class AdvertentieAanmakenScherm extends Scherm {
         try {
             System.out.println("Vraagprijs:");
             vraagprijs = scanner2.nextLine();
-            System.out.println("Alle waardes zijn ingevuld, we slaan de advertentie op.");
-        } catch (Exception e) {
-            System.out.println(e);
+        } catch (Exception exception) {
+            System.out.println("Er is een foutmelding opgetreden:" + exception);
         }
 
         Advertentie advertentie = new Advertentie(titel, Soort.fromShortName(soort.toLowerCase()), categorieDAO.findAll().get(categorie), Bezorgwijze.fromShortName(bezorgwijze.toLowerCase()), null, beschrijving, vraagprijs, this.gebruikerSessie);
-//        System.out.println("Je hebt deze gegevens ingevuld:");
-//        printAdvertentie(advertentie);
+        System.out.println("Je hebt deze gegevens ingevuld:");
+        printAdvertentie(advertentie);
 
-        advertentieDAO.insert(advertentie);
+        Scanner scanner5 = new Scanner(System.in);
 
-/*        try {
+        try {
             System.out.println("Vul opslaan in als je tevreden bent, en terug als je toch niet wilt opslaan:");
-            while (!scanner.hasNext("(?i)(opslaan|terug)")) {
+            while (!scanner5.hasNext("(?i)(opslaan|terug)")) {
                 System.out.println("Je hebt niet opslaan of terug ingetypt. Probeer het opnieuw:");
-                opslaanKeuze = scanner.next();
+                scanner5.next();
             }
-            opslaanKeuze = scanner.next();
-            System.out.println("Je hebt gekozen voor: " + opslaanKeuze);
+            opslaanKeuze = scanner5.next();
             if (opslaanKeuze.equalsIgnoreCase("opslaan")) {
+                System.out.println("De advertentie wordt opgeslagen.");
                 advertentieDAO.insert(advertentie);
-            } else return;
-        } catch (Exception e) {
-            System.out.println(e);
-        }*/
+            } else {
+                System.out.println("Je wordt teruggeleid.");
+            }
+        } catch (Exception exception) {
+            System.out.println("Er is een foutmelding opgetreden:" + exception);
+        }
 
 
     }
+
+
 }

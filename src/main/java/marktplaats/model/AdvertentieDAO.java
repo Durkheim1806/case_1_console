@@ -50,14 +50,14 @@ public class AdvertentieDAO {
         return em.createQuery("select a from Advertentie a", Advertentie.class).getResultList();
     }
 
-    public List<Advertentie> vindAdvertentiesPerGebruiker(long id) {
+    public List<Advertentie> vindAdvertentiesPerGebruiker(long aanbieder_id) {
 
         return em.createQuery("""   
                         select a 
                         from Advertentie a
-                        where a.id = :id
+                        where a.aanbieder.id = :aanbieder_id
                         """, Advertentie.class)
-                .setParameter("id", id)
+                .setParameter("aanbieder_id", aanbieder_id)
                 .getResultList();
     }
 
