@@ -11,12 +11,15 @@ import java.util.Scanner;
 
 @Slf4j
 @Singleton
-public class AdvertentiesScherm extends Scherm {
+public class AlleAdvertentiesScherm extends Scherm {
 
     private Gebruiker gebruikerSessie;
 
     @Inject
     private AdvertentieDAO advertentieDAO;
+
+    @Inject
+    AdvertentieZoekenScherm advertentieZoekenScherm;
 
     @Inject
     private AdvertentieBekijkenScherm advertentieBekijkenScherm;
@@ -34,7 +37,8 @@ public class AdvertentiesScherm extends Scherm {
             printLijstAdvertenties(advertentieDAO.findAll());
             System.out.println("---  Keuze menu: ---");
             System.out.println("1 - Advertentie bekijken");
-            System.out.println("2 - Terug");
+            System.out.println("2 - Advertentie zoeken");
+            System.out.println("3 - Terug");
 
             try {
                 System.out.println("Geef je keuze op:");
@@ -44,6 +48,7 @@ public class AdvertentiesScherm extends Scherm {
                         this.advertentieBekijkenScherm.start(this.gebruikerSessie);
                         break;
                     case 2:
+                        this.advertentieZoekenScherm.start(this.gebruikerSessie);
                         break;
                     default:
                         System.out.println("Ongeldige keuze. Probeer het nog eens.");
@@ -51,7 +56,7 @@ public class AdvertentiesScherm extends Scherm {
             } catch (Exception exception) {
                 System.out.println("Er is een foutmelding opgetreden. Probeer het opnieuw");
             }
-        } while (keuze != 2);
+        } while (keuze != 3);
     }
 
 

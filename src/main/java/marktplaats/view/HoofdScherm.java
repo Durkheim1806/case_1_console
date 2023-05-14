@@ -11,7 +11,7 @@ public class HoofdScherm extends Scherm {
 
     private Gebruiker gebruikerSessie;
     @Inject
-    AdvertentiesScherm advertentiesScherm;
+    AlleAdvertentiesScherm alleAdvertentiesScherm;
 
     @Inject
     MijnAdvertentiesScherm mijnAdvertentiesScherm;
@@ -35,7 +35,7 @@ public class HoofdScherm extends Scherm {
                 keuze = scanner.nextInt();
                 switch (keuze) {
                     case 1:
-                        this.advertentiesScherm.start(this.gebruikerSessie);
+                        this.alleAdvertentiesScherm.start(this.gebruikerSessie);
                         break;
                     case 2:
                         this.mijnAdvertentiesScherm.start(this.gebruikerSessie);

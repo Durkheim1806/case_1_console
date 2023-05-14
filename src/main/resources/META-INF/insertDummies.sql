@@ -17,6 +17,10 @@ INSERT INTO Categorie (id, naam, parent_id) VALUES (13, 'elektrische fietsen', 1
 INSERT INTO Categorie (id, naam, parent_id) VALUES (14, 'race fietsen', 12);
 INSERT INTO Categorie (id, naam, parent_id) VALUES (15, 'stad fietsen', 12);
 INSERT INTO Categorie (id, naam, parent_id) VALUES (16, 'speed pedelec', 13);
-INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (1, 'kite North 9m', 'north kite nooit gebruikt',1 , 1);
-INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (2, 'kite board','f1 kite board zo goed als nieuw',2, 2);
-INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (3, 'kite North 12m','north kite 12m geel',3, 3);
+INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (1, 'kite North 9m', 'north kite nooit gebruikt',5 , 1);
+INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (2, 'kite board geel','f1 kite board zo goed als nieuw',3, 2);
+INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (3, 'kite North 11m','north kite 12m geel',6, 3);
+INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (4, 'kite North 7m', 'north kite nooit gebruikt',4 , 1);
+INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (5, 'kite board groen','slingshot kite board ',3, 2);
+INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (6, 'oude race fiets','vintage peugeot fiets',14, 3);
+INSERT INTO Advertentie  (id, titel, omschrijving, categorie_id, aanbieder_id) VALUES (7, 'elektrische gazelle','top ding',13, 3);

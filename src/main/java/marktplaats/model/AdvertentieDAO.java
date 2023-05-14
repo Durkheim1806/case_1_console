@@ -70,6 +70,29 @@ public class AdvertentieDAO {
                 .getResultList();
     }
 
+    public List<Advertentie> vindAdvertentiesPerSoort(Soort soort) {
+
+        return em.createQuery("""   
+                        select a 
+                        from Advertentie a
+                        where a.soort = :soort
+                        """, Advertentie.class)
+                .setParameter("soort", soort)
+                .getResultList();
+    }
+
+    public List<Advertentie> vindAdvertentiesPerCategorie(long categorie_id) {
+
+        return em.createQuery("""   
+                        select a 
+                        from Advertentie a
+                        where a.categorie.id = :categorie_id
+                        """, Advertentie.class)
+                .setParameter("categorie_id", categorie_id)
+                .getResultList();
+    }
+
+
     @PreDestroy
     public void close() {
         this.em.close();

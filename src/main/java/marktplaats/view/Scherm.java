@@ -15,14 +15,14 @@ public abstract class Scherm {
     public abstract void start(Gebruiker gebruiker);
 
     public void printAdvertentie(Advertentie advertentie) {
-        System.out.printf("| %-5s | %-20s | %-10s | %-25s | %-10s | %-50s |%n", "ID", "TITEL", "SOORT", "CATEGORIE", "VRAAGPRIJS", "OMSCHRIJVING");
-        System.out.printf("| %-5s | %-20s | %-10s | %-25s | %-10s | %-50s |%n", advertentie.getId(), advertentie.getTitel(), advertentie.getSoort(), advertentie.getCategorie() == null ? null : advertentie.getCategorie().getNaam(), advertentie.getVraagprijs(), advertentie.getOmschrijving());
+        System.out.printf("| %-3s | %-30s | %-10s | %-25s | %-10s | %-50s |%n", "ID", "TITEL", "SOORT", "CATEGORIE", "VRAAGPRIJS", "OMSCHRIJVING");
+        System.out.printf("| %-3s | %-30s | %-10s | %-25s | %-10s | %-50s |%n", advertentie.getId(), advertentie.getTitel(), advertentie.getSoort(), advertentie.getCategorie() == null ? null : advertentie.getCategorie().getNaam(), advertentie.getVraagprijs(), advertentie.getOmschrijving());
     }
 
     public void printLijstAdvertenties(List<Advertentie> advertentieLijst) {
-        System.out.printf("| %-5s | %-20s | %-10s | %-15s | %-10s | %-20s |%n", "ID", "TITEL", "SOORT", "CATEGORIE", "VRAAGPRIJS", "AANBIEDER");
+        System.out.printf("| %-3s | %-30s | %-10s | %-25s | %-10s | %-20s |%n", "ID", "TITEL", "SOORT", "CATEGORIE", "VRAAGPRIJS", "AANBIEDER");
         for (int i = 0; i < advertentieLijst.size(); i++) {
-            System.out.printf("| %-5s | %-20s | %-10s | %-15s | %-10s | %-20s |%n", advertentieLijst.get(i).getId(), advertentieLijst.get(i).getTitel(), advertentieLijst.get(i).getSoort(), advertentieLijst.get(i).getCategorie() == null ? null : advertentieLijst.get(i).getCategorie().getNaam(), advertentieLijst.get(i).getVraagprijs(), advertentieLijst.get(i).getAanbieder().getEmail());
+            System.out.printf("| %-3s | %-30s | %-10s | %-25s | %-10s | %-20s |%n", advertentieLijst.get(i).getId(), advertentieLijst.get(i).getTitel(), advertentieLijst.get(i).getSoort(), advertentieLijst.get(i).getCategorie() == null ? null : advertentieLijst.get(i).getCategorie().getNaam(), advertentieLijst.get(i).getVraagprijs(), advertentieLijst.get(i).getAanbieder().getEmail());
         }
     }
 
@@ -71,4 +71,6 @@ public abstract class Scherm {
         }
         return null;
     }
+
+
 }
