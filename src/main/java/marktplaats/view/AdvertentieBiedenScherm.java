@@ -35,21 +35,26 @@ public class AdvertentieBiedenScherm extends Scherm {
         int keuzeBieden;
         BigDecimal bedrag;
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("\033[0;33m" + "---  Marktplaats - Hoofd Menu - Alle Advertenties - Advertentie Bieden ---" + "\033[0m");
+        int keuze = 0;
+        do {
 
-        System.out.println("Dit zijn de advertenties waarop je kan bieden:");
-        printLijstAdvertenties(advertentieDAO.findAll());
-        System.out.println("Op welke advertentie wil je bieden?");
-        keuzeBieden = scanner.nextInt();
-        System.out.println("Wat is het bedrag dat je wilt bieden?");
-        bedrag = scanner.nextBigDecimal();
-        try {
-            biedingController.insert(new Bieding(advertentieDAO.select(keuzeBieden), bedrag, this.gebruikerSessie));
-            System.out.println("Het bod wordt vastgelegd.");
-        } catch (IllegalArgumentException illegalArgumentException) {
-            System.out.println(illegalArgumentException);
-        }
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("\033[0;33m" + "---  Marktplaats - Hoofd Menu - Alle Advertenties - Advertentie Bieden ---" + "\033[0m");
+            System.out.println("Je bent ingelogd als " + gebruikerSessie.getVoornaam());
+            System.out.println("Op welke advertentie wil je bieden? Als je terug wilt gaan kan je 0 intypen.");
+            keuzeBieden = scanner.nextInt();
+            if (keuzeBieden == 0) {
+                break;
+            }
+            System.out.println("Wat is het bedrag dat je wilt bieden?");
+            bedrag = scanner.nextBigDecimal();
+            try {
+                biedingController.insert(new Bieding(advertentieDAO.select(keuzeBieden), bedrag, this.gebruikerSessie));
+                System.out.println("Het bod wordt vastgelegd.");
+            } catch (IllegalArgumentException illegalArgumentException) {
+                System.out.println(illegalArgumentException);
+            }
+        } while (keuzeBieden != 0);
 
 
     }

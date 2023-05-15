@@ -36,7 +36,7 @@ public class AdvertentieBekijkenScherm extends Scherm {
                 System.out.println("Dit zijn de biedingen van de advertentie:");
                 printBiedingen(biedingDAO.vindBiedingenPerAdvertentie(keuzeBekijken));
             } catch (Exception e) {
-                System.out.println("Er is een foutmelding opgetreden. Probeer het opnieuw");
+                System.out.println("Er is een foutmelding opgetreden: " + e + ". Probeer het opnieuw.");
             }
 
         } while (keuzeBekijken != 0);
