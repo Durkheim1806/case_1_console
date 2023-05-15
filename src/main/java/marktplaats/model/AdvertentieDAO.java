@@ -20,17 +20,19 @@ public class AdvertentieDAO {
         this.em = em;
     }
 
-    public void insert(Advertentie advertentie) {
+    public Advertentie insert(Advertentie advertentie) {
 
         EntityTransaction transaction = em.getTransaction();
 
         try {
             transaction.begin();
-            em.merge(advertentie);
+            var a = em.merge(advertentie);
             transaction.commit();
+            return a;
         } catch (Exception e) {
             log.error(e.getMessage(), e);
             transaction.rollback();
+            return null;
         }
     }
 
@@ -50,9 +52,14 @@ public class AdvertentieDAO {
 
         EntityTransaction transaction = em.getTransaction();
 
-        transaction.begin();
-        em.remove(advertentie);
-        transaction.commit();
+        try {
+            transaction.begin();
+            em.remove(advertentie);
+            transaction.commit();
+        } catch (Exception e) {
+            log.error(e.getMessage(), e);
+            transaction.rollback();
+        }
     }
 
     public List<Advertentie> findAll() {
@@ -110,4 +117,7 @@ public class AdvertentieDAO {
         this.em.close();
     }
 
+    public EntityManager getEm() {
+        return em;
+    }
 }

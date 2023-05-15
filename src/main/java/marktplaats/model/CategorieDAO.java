@@ -4,6 +4,7 @@ import jakarta.annotation.PreDestroy;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
@@ -22,6 +23,17 @@ public class CategorieDAO {
     public List<Categorie> findAll() {
 
         return em.createQuery("select c from Categorie c", Categorie.class).getResultList();
+    }
+
+    public Categorie select(int id) {
+
+        EntityTransaction transaction = em.getTransaction();
+
+        transaction.begin();
+        Categorie categorie = em.find(Categorie.class, id);
+        transaction.commit();
+
+        return categorie;
     }
 
     public List<Categorie> vindCategorieChildren(long parent_id) {

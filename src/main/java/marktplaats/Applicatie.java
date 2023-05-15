@@ -13,7 +13,7 @@ public class Applicatie {
     @Inject
     LoginScherm loginScherm;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalArgumentException {
 
         try (SeContainer container = Weld.newInstance().initialize()) {
             Applicatie applicatie = container.select(Applicatie.class).get();

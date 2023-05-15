@@ -74,11 +74,10 @@ public abstract class Scherm {
     }
 
     public void printBiedingen(List<Bieding> biedingLijst) {
-        System.out.printf("| %-20s | %-20s | %n", "BEDRAG", "BIEDER");
+        System.out.printf("| %-10s | %-20s | %n", "BEDRAG", "BIEDER");
         for (int i = 0; i < biedingLijst.size(); i++) {
-            System.out.printf("| %-20s | %-20s | %n", biedingLijst.get(i).getBedragBieding(), biedingLijst.get(i).getBieder().getEmail());
+            System.out.printf("| %-10s | %-20s | %n", biedingLijst.get(i).getBedragBieding(), biedingLijst.get(i).getBieder().getEmail());
         }
     }
-
 
 }

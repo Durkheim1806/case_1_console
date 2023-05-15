@@ -1,6 +1,8 @@
 package marktplaats.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,13 +11,15 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 @Entity
+@Builder
+@AllArgsConstructor
 public class Bieding {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Advertentie advertentie;
 
     private BigDecimal bedragBieding;
@@ -28,4 +32,5 @@ public class Bieding {
         this.bedragBieding = bedragBieding;
         this.bieder = bieder;
     }
+
 }

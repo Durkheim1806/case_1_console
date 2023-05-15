@@ -1,6 +1,7 @@
 package marktplaats.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,6 +14,7 @@ public class Gebruiker {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Email
     private String email;
     private String voornaam;
     private String achternaam;

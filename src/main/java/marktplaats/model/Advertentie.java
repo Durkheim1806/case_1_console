@@ -1,13 +1,13 @@
 package marktplaats.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 @Data
 @NoArgsConstructor
 @Entity
+@Builder
+@AllArgsConstructor
 public class Advertentie {
 
     @Id
@@ -38,4 +38,5 @@ public class Advertentie {
         this.vraagprijs = vraagprijs;
         this.aanbieder = aanbieder;
     }
+
 }

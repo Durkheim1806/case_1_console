@@ -21,7 +21,6 @@ public class BiedingDAO {
     }
 
     public void insert(Bieding bieding) {
-
         EntityTransaction transaction = em.getTransaction();
 
         try {
@@ -34,7 +33,7 @@ public class BiedingDAO {
         }
     }
 
-    public List<Bieding> vindBiedingenPerAdvertentie(int advertentie_id) {
+    public List<Bieding> vindBiedingenPerAdvertentie(long advertentie_id) {
         return em.createQuery("""   
                         select b
                         from Advertentie a, Bieding b
@@ -49,5 +48,9 @@ public class BiedingDAO {
     @PreDestroy
     public void close() {
         this.em.close();
+    }
+
+    public EntityManager getEm() {
+        return em;
     }
 }

@@ -3,6 +3,7 @@ package marktplaats.view;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import lombok.extern.slf4j.Slf4j;
+import marktplaats.controller.BiedingController;
 import marktplaats.model.AdvertentieDAO;
 import marktplaats.model.Bieding;
 import marktplaats.model.BiedingDAO;
@@ -21,6 +22,11 @@ public class AdvertentieBiedenScherm extends Scherm {
     @Inject
     private BiedingDAO biedingDAO;
 
+    @Inject
+    private BiedingController biedingController;
+
+//    @Inject BiedingController ...
+
     @Override
     public void start(Gebruiker gebruiker) {
 
@@ -38,8 +44,13 @@ public class AdvertentieBiedenScherm extends Scherm {
         keuzeBieden = scanner.nextInt();
         System.out.println("Wat is het bedrag dat je wilt bieden?");
         bedrag = scanner.nextBigDecimal();
-        System.out.println("Het bod wordt vastgelegd.");
-        biedingDAO.insert(new Bieding(advertentieDAO.select(keuzeBieden), bedrag, this.gebruikerSessie));
-        System.out.println("Dit zijn de biedingen:");
+        try {
+            biedingController.insert(new Bieding(advertentieDAO.select(keuzeBieden), bedrag, this.gebruikerSessie));
+            System.out.println("Het bod wordt vastgelegd.");
+        } catch (IllegalArgumentException illegalArgumentException) {
+            System.out.println(illegalArgumentException);
+        }
+
+
     }
 }

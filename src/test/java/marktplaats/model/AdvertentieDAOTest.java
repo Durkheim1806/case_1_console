@@ -1,33 +1,43 @@
 package marktplaats.model;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityTransaction;
+import jakarta.inject.Inject;
+import marktplaats.model.util.EntityManagerProducerAlt;
+import org.jboss.weld.junit5.auto.AddBeanClasses;
+import org.jboss.weld.junit5.auto.EnableAlternatives;
+import org.jboss.weld.junit5.auto.EnableAutoWeld;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.mockito.Mockito.when;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@ExtendWith(MockitoExtension.class)
+@EnableAutoWeld
+@AddBeanClasses({EntityManagerProducerAlt.class, AdvertentieDAO.class})
+@EnableAlternatives(EntityManagerProducerAlt.class)
 class AdvertentieDAOTest {
 
-    @Mock
-    private EntityManager emMock;
-
-    @Mock
-    private EntityTransaction tMock;
-
-    @InjectMocks
+    @Inject
     private AdvertentieDAO target;
 
-    @Test
-    void whenSelectWithValidIDThenPersonIsReturned() {
-        // given
-        when(emMock.getTransaction()).thenReturn(tMock);
-
-
+    @AfterEach
+    public void teardown() {
+        if (target.getEm().getTransaction().isActive()) {
+            target.getEm().getTransaction().rollback();
+        }
     }
+
+
+    @Test
+    void whenInsertValidPersonThenItIsInsertedInTheDatabase() {
+        // given
+        Advertentie advertentieFiets = Advertentie.builder().titel("Fiets").build();
+
+        // when
+        target.insert(advertentieFiets);
+
+        // then
+        Advertentie select = target.select(1);
+        assertNotNull(select);
+    }
+
 
 }
