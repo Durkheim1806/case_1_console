@@ -1,28 +1,28 @@
-[37m[INFO ] 2023-05-15 21:09:09.360 [main] Version - WELD-000900: 5.0.1 (Final)
-[m[37m[INFO ] 2023-05-15 21:09:09.521 [main] Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
-[m[37m[INFO ] 2023-05-15 21:09:09.701 [main] Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
-[m[37m[INFO ] 2023-05-15 21:09:10.369 [main] Bootstrap - WELD-ENV-002003: Weld SE container 61e9bc72-ce93-4dc3-8801-2493dac7c759 initialized
-[m[37m[INFO ] 2023-05-15 21:09:10.469 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: MySQL-localhost-marktplaats]
-[m[37m[INFO ] 2023-05-15 21:09:10.499 [main] Version - HHH000412: Hibernate ORM core version 6.1.3.Final
-[m[37m[INFO ] 2023-05-15 21:09:10.670 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-[m[33;1m[WARN ] 2023-05-15 21:09:10.816 [main] pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-[m[37m[INFO ] 2023-05-15 21:09:10.830 [main] pooling - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
-[m[37m[INFO ] 2023-05-15 21:09:10.830 [main] pooling - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/marktplaats]
-[m[37m[INFO ] 2023-05-15 21:09:10.830 [main] pooling - HHH10001001: Connection properties: {password=****, user=root}
-[m[37m[INFO ] 2023-05-15 21:09:10.830 [main] pooling - HHH10001003: Autocommit mode: false
-[m[37m[INFO ] 2023-05-15 21:09:10.835 [main] pooling - HHH10001115: Connection pool size: 20 (min=1)
-[m[37m[INFO ] 2023-05-15 21:09:11.280 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-[m[32;1m[DEBUG] 2023-05-15 21:09:11.302 [main] DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3f96f020) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@32eae6f2)
-[m[32;1m[DEBUG] 2023-05-15 21:09:11.303 [main] DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@26ca61bf) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@73a0f2b)
-[m[32;1m[DEBUG] 2023-05-15 21:09:11.303 [main] DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@fa5f81c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6a1d526c)
-[m[32;1m[DEBUG] 2023-05-15 21:09:11.304 [main] DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1f2f0109) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@483b0690)
-[m[32;1m[DEBUG] 2023-05-15 21:09:11.304 [main] DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@687e6293) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6870c3c2)
-[m[32;1m[DEBUG] 2023-05-15 21:09:11.304 [main] DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@fb0a08c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1faf386c)
-[m[32;1m[DEBUG] 2023-05-15 21:09:11.304 [main] DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4debbf0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6a5e167a)
-[m[32;1m[DEBUG] 2023-05-15 21:09:11.304 [main] DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@60e06f7d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@66a5755)
-[m[32;1m[DEBUG] 2023-05-15 21:09:11.305 [main] DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@771a7d53) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6d6d480c)
-[m[37m[INFO ] 2023-05-15 21:09:11.605 [main] Version - HV000001: Hibernate Validator 8.0.0.Final
-[m[37m[INFO ] 2023-05-15 21:09:11.633 [main] TypeSafeActivator - Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
+[37m[INFO ] 2023-05-19 09:53:59.654 [main] Version - WELD-000900: 5.0.1 (Final)
+[m[37m[INFO ] 2023-05-19 09:53:59.823 [main] Bootstrap - WELD-ENV-000020: Using jandex for bean discovery
+[m[37m[INFO ] 2023-05-19 09:54:00.000 [main] Bootstrap - WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+[m[37m[INFO ] 2023-05-19 09:54:00.634 [main] Bootstrap - WELD-ENV-002003: Weld SE container 4cfb185f-e5e9-4f30-893c-79c8a903368c initialized
+[m[37m[INFO ] 2023-05-19 09:54:00.729 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: MySQL-localhost-marktplaats]
+[m[37m[INFO ] 2023-05-19 09:54:00.758 [main] Version - HHH000412: Hibernate ORM core version 6.1.3.Final
+[m[37m[INFO ] 2023-05-19 09:54:00.933 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[m[33;1m[WARN ] 2023-05-19 09:54:01.076 [main] pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[m[37m[INFO ] 2023-05-19 09:54:01.093 [main] pooling - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[m[37m[INFO ] 2023-05-19 09:54:01.093 [main] pooling - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/marktplaats]
+[m[37m[INFO ] 2023-05-19 09:54:01.093 [main] pooling - HHH10001001: Connection properties: {password=****, user=root}
+[m[37m[INFO ] 2023-05-19 09:54:01.093 [main] pooling - HHH10001003: Autocommit mode: false
+[m[37m[INFO ] 2023-05-19 09:54:01.099 [main] pooling - HHH10001115: Connection pool size: 20 (min=1)
+[m[37m[INFO ] 2023-05-19 09:54:01.538 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[m[32;1m[DEBUG] 2023-05-19 09:54:01.561 [main] DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@62c72501) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@c889805)
+[m[32;1m[DEBUG] 2023-05-19 09:54:01.561 [main] DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@77db3d02) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@78d9f51b)
+[m[32;1m[DEBUG] 2023-05-19 09:54:01.561 [main] DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@23ed382c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6bedd4e4)
+[m[32;1m[DEBUG] 2023-05-19 09:54:01.562 [main] DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4570d7b6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@72b6832e)
+[m[32;1m[DEBUG] 2023-05-19 09:54:01.563 [main] DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3850e90c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3d9f5016)
+[m[32;1m[DEBUG] 2023-05-19 09:54:01.563 [main] DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7e91ed74) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3878be7b)
+[m[32;1m[DEBUG] 2023-05-19 09:54:01.563 [main] DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7df28f1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4087c7fc)
+[m[32;1m[DEBUG] 2023-05-19 09:54:01.563 [main] DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@318c68d5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4cfa83f9)
+[m[32;1m[DEBUG] 2023-05-19 09:54:01.564 [main] DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@321ca237) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4c5a2baf)
+[m[37m[INFO ] 2023-05-19 09:54:01.885 [main] Version - HV000001: Hibernate Validator 8.0.0.Final
+[m[37m[INFO ] 2023-05-19 09:54:01.915 [main] TypeSafeActivator - Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
 [m jakarta.validation.ValidationException: HV000183: Unable to initialize 'jakarta.el.ExpressionFactory'. Check that you have the EL dependencies on the classpath, or use ParameterMessageInterpolator instead
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory(ResourceBundleMessageInterpolator.java:211) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.<init>(ResourceBundleMessageInterpolator.java:97) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
@@ -113,29 +113,29 @@ Caused by: java.lang.ClassNotFoundException: com.sun.el.ExpressionFactoryImpl
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory(ResourceBundleMessageInterpolator.java:203) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
 	... 79 more
-[37m[INFO ] 2023-05-15 21:09:12.225 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@38054d01] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[m[37m[INFO ] 2023-05-15 21:09:12.298 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@16ccd2bc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[m[37m[INFO ] 2023-05-15 21:09:12.383 [main] SchemaCreatorImpl - HHH000476: Executing import script 'file:/Users/bresd00/Documents/repo_derk/case_1_console/target/classes/META-INF/insertDummies.sql'
-[m[37m[INFO ] 2023-05-15 21:09:12.443 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[m[37m[INFO ] 2023-05-15 21:09:12.499 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: MySQL-localhost-marktplaats]
-[m[37m[INFO ] 2023-05-15 21:09:12.504 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-[m[33;1m[WARN ] 2023-05-15 21:09:12.541 [main] pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-[m[37m[INFO ] 2023-05-15 21:09:12.542 [main] pooling - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
-[m[37m[INFO ] 2023-05-15 21:09:12.542 [main] pooling - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/marktplaats]
-[m[37m[INFO ] 2023-05-15 21:09:12.542 [main] pooling - HHH10001001: Connection properties: {password=****, user=root}
-[m[37m[INFO ] 2023-05-15 21:09:12.542 [main] pooling - HHH10001003: Autocommit mode: false
-[m[37m[INFO ] 2023-05-15 21:09:12.542 [main] pooling - HHH10001115: Connection pool size: 20 (min=1)
-[m[37m[INFO ] 2023-05-15 21:09:12.613 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-[m[32;1m[DEBUG] 2023-05-15 21:09:12.617 [main] DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2a42019a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6fc0e448)
-[m[32;1m[DEBUG] 2023-05-15 21:09:12.617 [main] DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@60194904) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4db6348b)
-[m[32;1m[DEBUG] 2023-05-15 21:09:12.617 [main] DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7742a276) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f48fa72)
-[m[32;1m[DEBUG] 2023-05-15 21:09:12.617 [main] DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@35b3c1f6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@495da9a7)
-[m[32;1m[DEBUG] 2023-05-15 21:09:12.617 [main] DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2beee3e8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@732d078d)
-[m[32;1m[DEBUG] 2023-05-15 21:09:12.617 [main] DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@58bad46f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7c0e4e4e)
-[m[32;1m[DEBUG] 2023-05-15 21:09:12.618 [main] DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@20231384) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3ba97962)
-[m[32;1m[DEBUG] 2023-05-15 21:09:12.618 [main] DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@35becbd4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3bcc8f13)
-[m[32;1m[DEBUG] 2023-05-15 21:09:12.619 [main] DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3cb04dd) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@73d91faf)
-[m[37m[INFO ] 2023-05-15 21:09:12.661 [main] TypeSafeActivator - Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
+[37m[INFO ] 2023-05-19 09:54:02.439 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3cdfbbef] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[m[37m[INFO ] 2023-05-19 09:54:02.502 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@79ba0285] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[m[37m[INFO ] 2023-05-19 09:54:02.586 [main] SchemaCreatorImpl - HHH000476: Executing import script 'file:/Users/bresd00/Documents/repo_derk/case_1_console/target/classes/META-INF/insertDummies.sql'
+[m[37m[INFO ] 2023-05-19 09:54:02.646 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[m[37m[INFO ] 2023-05-19 09:54:02.714 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: MySQL-localhost-marktplaats]
+[m[37m[INFO ] 2023-05-19 09:54:02.719 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[m[33;1m[WARN ] 2023-05-19 09:54:02.752 [main] pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[m[37m[INFO ] 2023-05-19 09:54:02.752 [main] pooling - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[m[37m[INFO ] 2023-05-19 09:54:02.752 [main] pooling - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/marktplaats]
+[m[37m[INFO ] 2023-05-19 09:54:02.752 [main] pooling - HHH10001001: Connection properties: {password=****, user=root}
+[m[37m[INFO ] 2023-05-19 09:54:02.752 [main] pooling - HHH10001003: Autocommit mode: false
+[m[37m[INFO ] 2023-05-19 09:54:02.753 [main] pooling - HHH10001115: Connection pool size: 20 (min=1)
+[m[37m[INFO ] 2023-05-19 09:54:02.821 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[m[32;1m[DEBUG] 2023-05-19 09:54:02.823 [main] DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@65ef9a0a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@25216999)
+[m[32;1m[DEBUG] 2023-05-19 09:54:02.823 [main] DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@77e6761f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5c997de8)
+[m[32;1m[DEBUG] 2023-05-19 09:54:02.823 [main] DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@45bf93bb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6b7c4734)
+[m[32;1m[DEBUG] 2023-05-19 09:54:02.823 [main] DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2f6e92ca) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@380fdcf2)
+[m[32;1m[DEBUG] 2023-05-19 09:54:02.823 [main] DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@114b203) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@8d810f2)
+[m[32;1m[DEBUG] 2023-05-19 09:54:02.824 [main] DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@537b3be1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@15d58530)
+[m[32;1m[DEBUG] 2023-05-19 09:54:02.824 [main] DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@31f5b923) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@79e2606f)
+[m[32;1m[DEBUG] 2023-05-19 09:54:02.825 [main] DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@734cf881) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4a890fdd)
+[m[32;1m[DEBUG] 2023-05-19 09:54:02.825 [main] DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@56299b0e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3ca278bc)
+[m[37m[INFO ] 2023-05-19 09:54:02.896 [main] TypeSafeActivator - Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
 [m jakarta.validation.ValidationException: HV000183: Unable to initialize 'jakarta.el.ExpressionFactory'. Check that you have the EL dependencies on the classpath, or use ParameterMessageInterpolator instead
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory(ResourceBundleMessageInterpolator.java:211) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.<init>(ResourceBundleMessageInterpolator.java:97) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
@@ -265,29 +265,29 @@ Caused by: java.lang.NoClassDefFoundError: com/sun/el/ExpressionFactoryImpl
 Caused by: java.lang.ClassNotFoundException: com.sun.el.ExpressionFactoryImpl
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory(ResourceBundleMessageInterpolator.java:203) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
 	... 121 more
-[37m[INFO ] 2023-05-15 21:09:12.774 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4272d8cf] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[m[37m[INFO ] 2023-05-15 21:09:12.827 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@70ecf57b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[m[37m[INFO ] 2023-05-15 21:09:12.908 [main] SchemaCreatorImpl - HHH000476: Executing import script 'file:/Users/bresd00/Documents/repo_derk/case_1_console/target/classes/META-INF/insertDummies.sql'
-[m[37m[INFO ] 2023-05-15 21:09:12.950 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[m[37m[INFO ] 2023-05-15 21:09:12.963 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: MySQL-localhost-marktplaats]
-[m[37m[INFO ] 2023-05-15 21:09:12.966 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-[m[33;1m[WARN ] 2023-05-15 21:09:13.016 [main] pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-[m[37m[INFO ] 2023-05-15 21:09:13.016 [main] pooling - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
-[m[37m[INFO ] 2023-05-15 21:09:13.016 [main] pooling - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/marktplaats]
-[m[37m[INFO ] 2023-05-15 21:09:13.016 [main] pooling - HHH10001001: Connection properties: {password=****, user=root}
-[m[37m[INFO ] 2023-05-15 21:09:13.017 [main] pooling - HHH10001003: Autocommit mode: false
-[m[37m[INFO ] 2023-05-15 21:09:13.017 [main] pooling - HHH10001115: Connection pool size: 20 (min=1)
-[m[37m[INFO ] 2023-05-15 21:09:13.068 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.074 [main] DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5d68954d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@f793f15)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.075 [main] DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3ec7eb5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5534e6f1)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.075 [main] DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c6fc3e7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@aa8dce8)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.075 [main] DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6ad112de) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18a0721b)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.075 [main] DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2ae2fa13) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@66e12c3b)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.075 [main] DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@44485db) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1f6f0fe2)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.075 [main] DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@22604c7e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4d8f2cfd)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.075 [main] DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6d4502ca) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@ab2009f)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.075 [main] DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2a11ae0b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1e4d8770)
-[m[37m[INFO ] 2023-05-15 21:09:13.118 [main] TypeSafeActivator - Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
+[37m[INFO ] 2023-05-19 09:54:03.078 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@69d7bc1a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[m[37m[INFO ] 2023-05-19 09:54:03.144 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6e668322] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[m[37m[INFO ] 2023-05-19 09:54:03.222 [main] SchemaCreatorImpl - HHH000476: Executing import script 'file:/Users/bresd00/Documents/repo_derk/case_1_console/target/classes/META-INF/insertDummies.sql'
+[m[37m[INFO ] 2023-05-19 09:54:03.270 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[m[37m[INFO ] 2023-05-19 09:54:03.293 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: MySQL-localhost-marktplaats]
+[m[37m[INFO ] 2023-05-19 09:54:03.297 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[m[33;1m[WARN ] 2023-05-19 09:54:03.339 [main] pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[m[37m[INFO ] 2023-05-19 09:54:03.339 [main] pooling - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[m[37m[INFO ] 2023-05-19 09:54:03.339 [main] pooling - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/marktplaats]
+[m[37m[INFO ] 2023-05-19 09:54:03.339 [main] pooling - HHH10001001: Connection properties: {password=****, user=root}
+[m[37m[INFO ] 2023-05-19 09:54:03.339 [main] pooling - HHH10001003: Autocommit mode: false
+[m[37m[INFO ] 2023-05-19 09:54:03.340 [main] pooling - HHH10001115: Connection pool size: 20 (min=1)
+[m[37m[INFO ] 2023-05-19 09:54:03.401 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.407 [main] DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3b347439) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5d3634c8)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.407 [main] DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6e67a8c0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5960f17)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.407 [main] DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1d1b3620) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@71e7c13f)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.407 [main] DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2295566b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@174e1b99)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.408 [main] DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@53a09566) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1c815814)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.408 [main] DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@14af73e1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@73da303e)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.408 [main] DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24068086) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@32513dea)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.408 [main] DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5d0e703a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7f77e065)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.408 [main] DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6f655dbd) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@546083d6)
+[m[37m[INFO ] 2023-05-19 09:54:03.448 [main] TypeSafeActivator - Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
 [m jakarta.validation.ValidationException: HV000183: Unable to initialize 'jakarta.el.ExpressionFactory'. Check that you have the EL dependencies on the classpath, or use ParameterMessageInterpolator instead
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory(ResourceBundleMessageInterpolator.java:211) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.<init>(ResourceBundleMessageInterpolator.java:97) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
@@ -417,29 +417,29 @@ Caused by: java.lang.NoClassDefFoundError: com/sun/el/ExpressionFactoryImpl
 Caused by: java.lang.ClassNotFoundException: com.sun.el.ExpressionFactoryImpl
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory(ResourceBundleMessageInterpolator.java:203) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
 	... 121 more
-[37m[INFO ] 2023-05-15 21:09:13.281 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2474df51] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[m[37m[INFO ] 2023-05-15 21:09:13.344 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5fb514c2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[m[37m[INFO ] 2023-05-15 21:09:13.421 [main] SchemaCreatorImpl - HHH000476: Executing import script 'file:/Users/bresd00/Documents/repo_derk/case_1_console/target/classes/META-INF/insertDummies.sql'
-[m[37m[INFO ] 2023-05-15 21:09:13.461 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[m[37m[INFO ] 2023-05-15 21:09:13.471 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: MySQL-localhost-marktplaats]
-[m[37m[INFO ] 2023-05-15 21:09:13.474 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-[m[33;1m[WARN ] 2023-05-15 21:09:13.495 [main] pooling - HHH10001002: Using built-in connection pool (not intended for production use)
-[m[37m[INFO ] 2023-05-15 21:09:13.496 [main] pooling - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
-[m[37m[INFO ] 2023-05-15 21:09:13.496 [main] pooling - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/marktplaats]
-[m[37m[INFO ] 2023-05-15 21:09:13.496 [main] pooling - HHH10001001: Connection properties: {password=****, user=root}
-[m[37m[INFO ] 2023-05-15 21:09:13.496 [main] pooling - HHH10001003: Autocommit mode: false
-[m[37m[INFO ] 2023-05-15 21:09:13.496 [main] pooling - HHH10001115: Connection pool size: 20 (min=1)
-[m[37m[INFO ] 2023-05-15 21:09:13.539 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.541 [main] DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6807989e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@c2e33)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.541 [main] DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@31183ee2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@63f3366a)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.542 [main] DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@37e491e2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@56f84c9b)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.542 [main] DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@26679788) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5cdda548)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.542 [main] DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4f2544b0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5bad555b)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.542 [main] DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@41ec4271) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@70aa58e1)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.542 [main] DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@154f8280) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@24f90aff)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.542 [main] DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7252bdb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@25ea068e)
-[m[32;1m[DEBUG] 2023-05-15 21:09:13.542 [main] DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4cd8db31) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@201a8ea7)
-[m[37m[INFO ] 2023-05-15 21:09:13.608 [main] TypeSafeActivator - Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
+[37m[INFO ] 2023-05-19 09:54:03.557 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@35d114f4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[m[37m[INFO ] 2023-05-19 09:54:03.620 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4be460e5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[m[37m[INFO ] 2023-05-19 09:54:03.691 [main] SchemaCreatorImpl - HHH000476: Executing import script 'file:/Users/bresd00/Documents/repo_derk/case_1_console/target/classes/META-INF/insertDummies.sql'
+[m[37m[INFO ] 2023-05-19 09:54:03.736 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[m[37m[INFO ] 2023-05-19 09:54:03.747 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: MySQL-localhost-marktplaats]
+[m[37m[INFO ] 2023-05-19 09:54:03.749 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[m[33;1m[WARN ] 2023-05-19 09:54:03.777 [main] pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+[m[37m[INFO ] 2023-05-19 09:54:03.777 [main] pooling - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+[m[37m[INFO ] 2023-05-19 09:54:03.778 [main] pooling - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/marktplaats]
+[m[37m[INFO ] 2023-05-19 09:54:03.778 [main] pooling - HHH10001001: Connection properties: {password=****, user=root}
+[m[37m[INFO ] 2023-05-19 09:54:03.778 [main] pooling - HHH10001003: Autocommit mode: false
+[m[37m[INFO ] 2023-05-19 09:54:03.778 [main] pooling - HHH10001115: Connection pool size: 20 (min=1)
+[m[37m[INFO ] 2023-05-19 09:54:03.809 [main] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.811 [main] DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@77d959f1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@11c999da)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.812 [main] DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@54f69311) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4ab86b2a)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.812 [main] DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7793b55d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2ac9e53c)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.812 [main] DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4ac7856f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@432f4626)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.812 [main] DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@297c3a43) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4c79ca55)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.812 [main] DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3a63d248) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3c4ad54)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.813 [main] DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4b22214d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@498b611e)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.813 [main] DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6dde1bf5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4b56b517)
+[m[32;1m[DEBUG] 2023-05-19 09:54:03.813 [main] DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1124dd79) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@335cdd2)
+[m[37m[INFO ] 2023-05-19 09:54:03.838 [main] TypeSafeActivator - Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
 [m jakarta.validation.ValidationException: HV000183: Unable to initialize 'jakarta.el.ExpressionFactory'. Check that you have the EL dependencies on the classpath, or use ParameterMessageInterpolator instead
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory(ResourceBundleMessageInterpolator.java:211) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.<init>(ResourceBundleMessageInterpolator.java:97) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
@@ -569,8 +569,8 @@ Caused by: java.lang.NoClassDefFoundError: com/sun/el/ExpressionFactoryImpl
 Caused by: java.lang.ClassNotFoundException: com.sun.el.ExpressionFactoryImpl
 	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory(ResourceBundleMessageInterpolator.java:203) ~[hibernate-validator-8.0.0.Final.jar:8.0.0.Final]
 	... 121 more
-[37m[INFO ] 2023-05-15 21:09:13.707 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2aa811f9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[m[37m[INFO ] 2023-05-15 21:09:13.780 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d4da729] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-[m[37m[INFO ] 2023-05-15 21:09:13.866 [main] SchemaCreatorImpl - HHH000476: Executing import script 'file:/Users/bresd00/Documents/repo_derk/case_1_console/target/classes/META-INF/insertDummies.sql'
-[m[37m[INFO ] 2023-05-15 21:09:13.906 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[37m[INFO ] 2023-05-19 09:54:03.929 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@79135a38] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[m[37m[INFO ] 2023-05-19 09:54:03.980 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@563c3aca] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[m[37m[INFO ] 2023-05-19 09:54:04.052 [main] SchemaCreatorImpl - HHH000476: Executing import script 'file:/Users/bresd00/Documents/repo_derk/case_1_console/target/classes/META-INF/insertDummies.sql'
+[m[37m[INFO ] 2023-05-19 09:54:04.093 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 [m

@@ -2,6 +2,8 @@ package marktplaats.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,10 +12,12 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @Entity
+@Builder
+@AllArgsConstructor
 public class Gebruiker {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Email
     private String email;
     private String voornaam;

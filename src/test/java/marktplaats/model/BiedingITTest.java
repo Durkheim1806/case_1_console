@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 
 @EnableAutoWeld
-@AddBeanClasses({EntityManagerProducerAlt.class, BiedingDAO.class, BiedingController.class, AdvertentieDAO.class})
+@AddBeanClasses({EntityManagerProducerAlt.class, GebruikerDAO.class, BiedingDAO.class, BiedingController.class, AdvertentieDAO.class})
 @EnableAlternatives(EntityManagerProducerAlt.class)
 class BiedingITTest {
 
@@ -23,6 +23,9 @@ class BiedingITTest {
     @Inject
     private AdvertentieDAO advertentieDAO;
 
+    @Inject
+    private GebruikerDAO gebruikerDAO;
+
     @AfterEach
     public void teardown() {
         if (advertentieDAO.getEm().getTransaction().isActive()) {
@@ -31,13 +34,17 @@ class BiedingITTest {
     }
 
     @Test
-    public void alsInsertBodLagerOfGelijkAanBestaandeBiedingenDanException() {
+    public void alsInsertBodIntegratieLagerOfGelijkAanBestaandeBiedingenDanException() {
         // given
-        Advertentie advertentieFiets1 = Advertentie.builder().build();
+        Gebruiker fred = Gebruiker.builder().build();
+        var fredWithId = gebruikerDAO.insert(fred);
+        Gebruiker sjaak = Gebruiker.builder().build();
+        var sjaakWithId = gebruikerDAO.insert(sjaak);
+        Advertentie advertentieFiets1 = Advertentie.builder().aanbieder(fredWithId).id(1).build();
         var aWithId = advertentieDAO.insert(advertentieFiets1);
 
-        Bieding bodFiets20 = Bieding.builder().advertentie(aWithId).bedragBieding(BigDecimal.valueOf(20)).build();
-        Bieding bodFiets10 = Bieding.builder().advertentie(aWithId).bedragBieding(BigDecimal.valueOf(10)).build();
+        Bieding bodFiets20 = Bieding.builder().advertentie(aWithId).bieder(sjaakWithId).bedragBieding(BigDecimal.valueOf(20)).build();
+        Bieding bodFiets10 = Bieding.builder().advertentie(aWithId).bieder(fredWithId).bedragBieding(BigDecimal.valueOf(10)).build();
 
         biedingController.insert(bodFiets20);
 

@@ -38,17 +38,17 @@ public class CategorieDAO {
 
     public List<Categorie> vindCategorieChildren(long parent_id) {
         String sql = """
-                 WITH RECURSIVE cte AS (
-                 	SELECT id, naam, parent_id
-                 	FROM Categorie
-                 	WHERE id = :parent_id
+                 WITH RECURSIVE CategoryBranch AS (
+                 	SELECT p.id, p.naam, p.parent_id
+                 	FROM Categorie p
+                 	WHERE p.id = :parent_id
                  	UNION ALL
                  	SELECT c.id, c.naam, c.parent_id
                  	FROM Categorie c
-                 	JOIN cte ON C.parent_id = cte.id
+                 	JOIN CategoryBranch ON c.parent_id = CategoryBranch.id
                  )
                  SELECT *
-                 FROM cte;
+                 FROM CategoryBranch;
                 """;
         return em.createNativeQuery(sql, Categorie.class)
                 .setParameter("parent_id", parent_id)

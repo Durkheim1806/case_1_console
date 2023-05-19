@@ -14,6 +14,8 @@ public class Advertentie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String titel;
+    @Column(name = "Soort")
+    @Convert(converter = SoortConverter.class)
     @Enumerated(EnumType.STRING)
     private Soort soort;
     @ToString.Exclude

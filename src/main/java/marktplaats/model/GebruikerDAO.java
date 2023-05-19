@@ -18,17 +18,19 @@ public class GebruikerDAO {
         this.em = em;
     }
 
-    public void insert(Gebruiker gebruiker) {
+    public Gebruiker insert(Gebruiker gebruiker) {
 
         EntityTransaction transaction = em.getTransaction();
 
         try {
             transaction.begin();
-            em.merge(gebruiker);
+            var g = em.merge(gebruiker);
             transaction.commit();
+            return g;
         } catch (Exception e) {
             log.error(e.getMessage(), e);
             transaction.rollback();
+            return null;
         }
     }
 

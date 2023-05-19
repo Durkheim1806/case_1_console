@@ -17,7 +17,8 @@ public class BiedingController {
 
     public void insert(Bieding bieding) {
 
-        if (bieding.getBieder().getId() == bieding.getAdvertentie().getAanbieder().getId()) {
+
+        if (bieding.getBieder().getId() != null && bieding.getBieder().getId().equals(bieding.getAdvertentie().getAanbieder().getId())) {
             throw new IllegalArgumentException("Je kan niet bieden op je eigen advertentie.");
         }
 
