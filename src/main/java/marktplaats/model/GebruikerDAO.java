@@ -1,23 +1,14 @@
 package marktplaats.model;
 
 import jakarta.annotation.PreDestroy;
-import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
-import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Singleton
-public class GebruikerDAO {
-
-    private EntityManager em;
-
-    @Inject
-    public GebruikerDAO(EntityManager em) {
-        this.em = em;
-    }
-
+public class GebruikerDAO extends DAO {
+    
     public Gebruiker insert(Gebruiker gebruiker) {
 
         EntityTransaction transaction = em.getTransaction();

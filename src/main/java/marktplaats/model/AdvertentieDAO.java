@@ -1,7 +1,6 @@
 package marktplaats.model;
 
 import jakarta.annotation.PreDestroy;
-import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
@@ -11,14 +10,7 @@ import java.util.List;
 
 @Slf4j
 @Singleton
-public class AdvertentieDAO {
-
-    private EntityManager em;
-
-    @Inject
-    public AdvertentieDAO(EntityManager em) {
-        this.em = em;
-    }
+public class AdvertentieDAO extends DAO {
 
     public Advertentie insert(Advertentie advertentie) {
 
